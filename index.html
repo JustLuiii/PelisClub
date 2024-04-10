@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <title>PelisClub</title>
+        <meta name="robots" content="noindex, noimageindex, follow" />
+        <meta name="author" content="Borja Machín Morera">
+        <meta name="description" content="Página principal de la web Oscarsclub"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+        <meta name="msvalidate.01" content="CBB6B71ADC72146F48247A7810B18C13" />
+    </head>
+    <body>
+        <header id="header">
+            <a href="index.html" class="logo">
+                <img src="img/oscarsclub-isologo.png" alt="Logo">
+                Pelis<span>Club</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="clubes-tematicos.html">Clubes temáticos</a></li>
+                    <li><a href="sesiones-2020.html">Peliculas</li>
+                </ul>
+            </nav>
+            <a href="" id="btn-login">Iniciar sesión</a>
+        </header>
+        <a><img id="banner" src="img/cinema.jpg" alt="Banner"></a>
+
+
+    <div id="hero">
+
+        <hr class="linea-divisora">
+
+        <h1>Peliculas destacadas</h1>
+        <h2></h2>
+
+
+        <div align="center">
+            <img class="boton-imagen" src="img/midsommarPic1.jpg" alt="Botón 1" onclick="cambiarImagen('imagen1.png')">
+            <img class="boton-imagen" src="img/mid90sPic.jpg" alt="Botón 2" onclick="cambiarImagen('imagen2.jpg')">
+            <img class="boton-imagen" src="img/spidermanPic.jpg" alt="Botón 3" onclick="cambiarImagen('imagen3.jpg')">
+            <img class="boton-imagen" src="img/1917Pic.jpg" alt="Botón 4" onclick="cambiarImagen('imagen4.jpg')">
+            <img class="boton-imagen" src="img/oppenheimer.jpg" alt="Botón 5" onclick="cambiarImagen('imagen5.jpg')">
+        </div>
+
+        <main>
+            
+    
+            <section>
+                <h2>¿Cómo funciona?</h2>
+                <ul class="list-icons">
+                    <li>
+                        <figure>
+                            <img src="img/howto-register.png" alt="Icono registrarse">
+                            <figcaption>Regístrate</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="img/howto-club.png" alt="Icono inscribirse">
+                            <figcaption>Inscríbete en un club</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="img/howto-film.png" alt="Icono elegir película">
+                            <figcaption>Elige una película</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="img/howto-speech.png" alt="Icono debate">
+                            <figcaption>Disfruta del debate</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+                
+            <section>
+                <h2>Únete al club</h2>
+
+                <div class="container-club">
+                    <div class="club-text">
+                        <p>Estamos mirando tu próxima película preferida.</p>
+                        <p>¿Te lo vas a perder?</p>
+                    </div>
+                    
+                    <form action="index.html">
+                        <ul>
+                            <li>
+                                <input type="text" placeholder="Nombre" pattern="[A-Za-z'- ]{2,128}" title="De 2 a 128 caracteres (Letras, apóstrofes o guiones)" required>
+                            </li>
+        
+                            <li>
+                                <input type="email" placeholder="Correo electrónico" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" title="No es correcto el formato del correo electrónico" required>
+                            </li>
+        
+                            <li>
+                                <input type="password" placeholder="Contraseña" pattern="[A-Za-z0-9'-_.$!?#%&*^]{8,}" title="La contraseña debe tener mínimo 8 caracteres" required>
+                            </li>
+                        </ul>
+                        <p class="policy-privacy">
+                            INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE
+                            <strong>OSCARS CLUB</strong>. <strong>Finalidades</strong>: recogida de datos para la
+                            inscripción como socio del interesado. <strong>Legitimación</strong>:
+                            Consentimiento del interesado. <strong>Destinatarios</strong>: No están previstas
+                            cesiones de datos a terceros, salvo obligación legal. <strong>Derechos</strong>:
+                            Puede retirar su consentimiento en cualquier momento, así como
+                            acceder, rectificar, suprimir sus datos y otros derechos
+                            dirigiéndose a oscarsclub@oscarsclub.org. <strong>Información
+                            Adicional</strong>: Puede ampliar la información en el enlace de <a href="">Aviso Legal</a>
+                            y <a href="">Política de privacidad</a>.
+                        </p>
+                        <label for="checkbox"> 
+                            <input id="checkbox" type="checkbox" required> 
+                            He leído y acepto la política de privacidad
+                        </label>
+                        <input id="btn-submit" type="submit" value="Registrarse">
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>   
+        
+        <footer>
+            <div class="container-footer">
+                <nav>
+                    <ul>
+                        <li><a href="">Sobre nosotros</a></li>
+                        <li><a href="">Aviso legal</a></li>
+                        <li><a href="">Política de privacidad</a></li>
+                    </ul>
+                </nav>
+    
+                <nav>
+                    <ul>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Youtube</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <ul>
+                <li>&copy; 2024 Luis & Bryan</li>
+                <li>Imágenes <a href="https://unsplash.com/">unsplash.com</a></li>
+                <li id="icon--top"><a href="#header">&xwedge;</a></li>
+            </ul>
+        </footer>
+
+        <script>
+            function cambiarImagen(nombreImagen) {
+              var banner = document.getElementById("banner");
+              banner.src = nombreImagen;
+            }
+        </script>
+    </body>
+</html>
